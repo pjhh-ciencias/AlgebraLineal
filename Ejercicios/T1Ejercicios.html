@@ -146,11 +146,185 @@
     </ol>  
     </div>
 
-<!--
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Demuestra que el conjunto de los números complejos $\mathbb{C}:= \{x+iy \, |\,x,y \in \mathbb{R}\}$ con la suma
+      y multiplicación de números complejos definidas para $z:= a+ib$,$w:= c+ id$ en $\mathbb{C}$ como:
+     $$z+w= (a+ib) + (c+id):= (a+c) + i (b+d) $$ y
+     $$z \cdot w = (a+ib) \cdot (c+id) := (ac-bd)+ i(ad+bc) $$
+     es un campo. 
+    </p> 
+    </div>
+
+    
+
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+     <p>Sean $\mathbb{F}$ un campo y $n \in \mathbb{N}$. Consideremos el conjunto $\mathbb{P}_{n}(\mathbb{F})$,
+     el conjunto de todos los polinomios con coeficientes en $\mathbb{F}$ de grado menor o igual que $n$, i.e. 
+     $$\mathbb{P}_{n}(\mathbb{F}):=\{a_{n} x^{n} + a_{n-1} x^{n-1} + \cdots + a_{1} x + a_0 \, | \, a_{i} \in \mathbb{F}, \text{ para } i=0,1,\ldots, n \} $$ 
+     Para  $p:=\sum_{k=0}^{n} a_{k} x^{k}, b:= \sum_{k=0}^{n} b_{k} x^{k} \in \mathbb{P}_{n}(\mathbb{F})$, 
+     definimos la suma de $p$ y $q$ como:
+     $$p+q= \sum_{k=0}^{n} a_{k}x^{k}  +  \sum_{k=0}^{n} b_{k} x^{k}:= \sum_{k=0}^{n} (a_{k} + b_{k}) x^{k} $$
+     y la multiplicación por escalar de $\alpha$ de la siguiente manera:
+     $$\alpha p = \alpha \left( \sum_{k=0}^{n} a_{k} x^{k} \right):= \sum_{k=0}^{n} (\alpha \cdot a_{k}) x^{k} $$ 
+    Prueba que junto con estas operaciones $\mathbb{P}_{n}(\mathbb{F})$ es un espacio vectorial sobre $\mathbb{F}$
+  </p>
+    </div>
+
+    <div class="ejercicio-box" id="Ejer:Esp_vect_funciones">
+      <h2 class="number-title"> Ejercicio</h2>
+    Sea $X$ un conjunto no vacio y $\mathbb{F}$ un campo. Consideremos el conjunto 
+    $$\mathcal{F}(X,\mathbb{F}):= \{ f \colon X  \to \mathbb{R} \,|\, f \text{ es una función} \}$$
+    Para $f,g \in \mathcal{F}(X,\mathbb{F})$, se define la suma de $f$ y $g$ como la función $f+g$ con
+    regla de correspondecia dada por:
+    $$(f+g)(x):= f(x) + g(x), \forall x \in X$$   
+    y dado $\alpha \mathbb{F}$, se define la multiplicación por escalar como la función $\alpha f$ 
+    con regla de correspondencia:
+    $$(\alpha f)(x):= \alpha \cdot f(x), , \forall x \in X$$
+    
+    Demuestra que junto con estas operaciones, $\mathcal{F}(X,\mathbb{F})$ es un espacio vectorial sobre $\mathbb{F}$
+    </div>
+   
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p><b>Definición:</b> Una función $f \colon \mathbb{R} \to \mathbb{R}$ es <b>par</b> si 
+                            $$f(-x)= f(x), \forall x \in \mathbb{R}.$$
+      Pruebe que el conjunto $V:=\{ f\colon \mathbb{R} \to \mathbb{R} \,| \, f \text{ es una función par } \}$ junto 
+      con las operaciones de suma y multiplicación por escalar definidas en el <a href="T1Ejercicios.html#Ejer:Esp_vect_funciones"> Ejercicio 1.7</a>
+      es un espacio vectorial sobre $\mathbb{R}$.</p>
+    </div>
+
+
+
+    
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Sean $a,b \in \mathbb{R}$ con $a < b$. Consideremos el conjunto $C[a,b]$ de todas las funciones continuas
+      en $[a,b]$ con valores en $\mathbb{R}$, i.e. 
+      $$C[a,b]:= \{f \colon [a,b] \to \mathbb{R} \,| \, f \text{ es continua en } [a,b] \}$$
+       Pruebe que el conjunto $C[a,b]$ junto con las operaciones de suma y multiplicación por escalar definidas 
+       en el <a href="T1Ejercicios.html#Ejer:Esp_vect_funciones"> Ejercicio 1.7</a> ses un espacio vectorial sobre $\mathbb{R}$.</p>
+    </div>
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Sea $\mathbb{F}$ un campo  y $n\in \mathbb{N}$.  Considerems el  conjunto
+       $\mathbb{M}_{n \times n}(\mathbb{F})$ de
+      todas las matrices de tamaño $n \times n$ con entradas en el campo $\mathbb{F}$, i.e. 
+     $$\mathbb{M}_{n \times n}(\mathbb{F}) := \left\{ \left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}} \, | \, a_{ij} \in \mathbb{F}  \text{ para cada } i,j=1,2,\ldots,n \right\} $$
+    Dados $A:=\left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}}, B:=\left(b_{ij} \right)_{i,j \in \{1,\ldots,n \}} \in \mathbb{M}_{n \times n}(\mathbb{F}) $
+    y $\alpha \in \mathbb{F}$, definimos la suma de matrices  y la  multiplicación por escalar respectivamente como:
+    $$A+B=\left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}} + \left(b_{ij} \right)_{i,j \in \{1,\ldots,n \} } := \left(a_{ij} + b_{ij}\right)_{i,j \in \{1,\ldots,n \}} $$
+   
+    $$\alpha A =\alpha \left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}}:= \left(\alpha \cdot a_{ij} \right)_{i,j \in \{1,\ldots,n \}}  $$
+    </p>
+   Demuestra que el conjunto  $\mathbb{M}_{n \times n}(\mathbb{F})$ junto con las operaciones definidas previamente es 
+   un espacio vectorial. 
+    </div>
+
+    
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+   <p> Sea $V:=\{(a,b) \colon a,b \in \mathbb{R}\}$, el conjunto de parejas ordenadas de números reales. Para 
+    $(a,b), (x,y) \in V$ y $\alpha \in \mathbb{R}$, definamos
+    $$(a,b)+(x,y):= (a+x,0)$$
+
+    $$\alpha(x,y):=(\alpha \cdot x,0) $$
+
+    ¿Es $V$ con estas operaciones, un espacio vectorial sobre $\mathbb{R}$? Justifica tu respuesta
+  </p>
+    </div>
+    
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+   <p> Sea $V:=\{(a,b) \colon a,b \in \mathbb{R}\}$, el conjunto de parejas ordenadas de números reales. Para 
+    $(a,b), (x,y) \in V$ y $\alpha \in \mathbb{R}$. Definamos, 
+    $$(a,b)+(x,y):= (a+2x,b+3y)$$
+
+    $$\alpha(x,y):=(\alpha \cdot x,\alpha \cdot y) $$
+
+    ¿Es $V$ con estas operaciones, un espacio vectorial sobre $\mathbb{R}$? Justifica tu respuesta
+  </p>
+    </div>
+
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+   <p> Sea $V:=\{(a,b) \colon a,b \in \mathbb{R}\}$, el conjunto de parejas ordenadas de números reales. Para 
+    $(a,b), (x,y) \in V$ y $\alpha \in \mathbb{R}$. Definamos, 
+    $$(a,b)+(x,y):= (a+x,b+y)$$
+
+    $$\alpha(x,y):=\begin{cases} (0,0) \text{ si } \alpha =0 \\ \left(\alpha \cdot x,\displaystyle{\frac{y}{\alpha}}\right )  \text{ si } \alpha \not=0  \end{cases} $$
+
+    ¿Es $V$ con estas operaciones, un espacio vectorial sobre $\mathbb{R}$? Justifica tu respuesta
+  </p>
+    </div>
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+   <p> Consideremos el conjunto de sucesiones reales $V:=\{(a_{n})_{n \in \mathbb{N}} \colon a_{n}  \in \mathbb{R}\}$,
+    Dados $(a_{n})_{n \in \mathbb{N}},(b_{n})_{n \in \mathbb{N}}  \in V$ y $\alpha \in \mathbb{R}$, se definen las siguientes 
+    operaciones:
+
+    $$(a_{n})_{n \in \mathbb{N}} + (b_{n})_{n \in \mathbb{N}} := (a_{n}+ b_{n})_{n \in \mathbb{N}} $$
+
+    $$\alpha (a_{n})_{n \in \mathbb{N}}:= (\alpha \cdot a_{n})_{n \in \mathbb{N}}$$
+
+    Demuestra que  $V$ con estas operaciones es un espacio vectorial sobre $\mathbb{R}$
+  </p>
+    </div>
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+   <p> Sea $V$ el conjunto de sucesiones de números reales convergentes, i.e.
+    $$V:=\{(a_{n})_{n \in \mathbb{N}} \,|\,  a_{n}  \in \mathbb{R}  \text{ para todo } n  \in \mathbb{N} \text{ y } \lim_{n \to \infty} a_{n} \text{ existe } \}$$,
+    Dados $(a_{n})_{n \in \mathbb{N}},(b_{n})_{n \in \mathbb{N}}  \in V$ y $\alpha \in \mathbb{R}$, se definen las siguientes 
+    operaciones:
+
+    $$(a_{n})_{n \in \mathbb{N}} + (b_{n})_{n \in \mathbb{N}} := (a_{n}+ b_{n})_{n \in \mathbb{N}} $$
+
+    $$\alpha (a_{n})_{n \in \mathbb{N}}:= (\alpha \cdot a_{n})_{n \in \mathbb{N}}$$
+
+    ¿Es $V$ con estas operaciones, un espacio vectorial sobre $\mathbb{R}$? Justifica tu respuesta
+  </p>
+    </div>
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+   <p> Sean $\mathbb{F}$ un campo y  $(V,\mathbb{F},\boxplus,\boxdot), (W,\mathbb{F},\oplus,\odot)$  espacios vectoriales 
+    sobre $\mathbb{F}$. Consideremos el siguiente conjunto:
+
+    $$Z:=\{ (v,w) \, |\, v\in V, w \in W\}$$
+
+    Demuestra que $Z$ es un espacio vectorial sobre $\mathbb{F}$ con las siguientes operaciones:
+
+
+    $$(v_{1},w_{1}) + (v_{2},w_{2}):=( v_{1} \boxplus v_{2},w_{1} \oplus w_{2}) $$
+
+    $$\alpha(v,w):=(\alpha \boxdot v  ,\alpha \odot w) $$
+
+    Donde $(v_{1},w_{1}), (v_{2},w_{2}), (v,w) \in Z$
+
+  </p>
+    </div>
+    <!--
     <div class="ejercicio-box">
     <h2 class="number-title"> Ejercicio</h2>
       
     </div>
 -->
   
+
+
+
+
 </body>
