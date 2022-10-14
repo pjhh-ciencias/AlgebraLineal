@@ -27,6 +27,19 @@
       };
     </script>
 
+
+     <!-- This part is for using single $ for latex input, instead of \(\) -->
+ <script>
+  MathJax = {
+  tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+  svg: {
+      fontCache: 'global'
+  }
+};
+</script>
+
     <!-- CSS -->
 
     <link rel="stylesheet" , href="style.css" />
@@ -84,8 +97,8 @@
           <li>Ejemplos clásicos de espacios vectoriales:</li>  
             <ul>
               <li>El espacio $\mathbb{F}^{n}$.</li>
-              <li>El espacio de las matrices $\mathbb{M}_{m\times n}(F)$.  </li>
-              <li>El espacio de las funciones $\mathcal{F}(X, \mathbb{F})$ . </li>
+              <li>El espacio de las matrices $\mathbb{M}_{m\times n}(\mathbb{F})$.  </li>
+              <li>El espacio de las funciones $\mathcal{F}(X, \mathbb{F})$. </li>
               <li>El espacio de los polinomios $\mathbb{P}_{n}(\mathbb{F})$.</li>
             </ul><!--  Definicion de espacio vectorial, ejemplos y sus propiedades básicas--></li>
           <li>Subespacios vectoriales.<!--  Subespacio y subespacio generado --></li>
@@ -97,35 +110,64 @@
           <li>Suma directa</li>
       </ol>
       <li><b><font size="5">Matrices y sistemas de ecuaciones lineales</font></b></li>
-          <ol>
-          <li>El espacio de las matrices</li>
-          <li>Operaciones basicas entre matrices</li>
-          <li>Transpuesta de una matriz y propiedades</li>
+         <ol>
+          <li>El espacio de las matrices.</li>
+          <li>Operaciones basicas entre matrices.</li>
+          <li>Transpuesta de una matriz y propiedades.</li>
           <li>Matrices especiales:
             <ul>
-              <li>diagonales,</li> 
-              <li>triangulares,</li> 
-              <li>simétricas,</li> 
-              <li>antisimetricas</li>
-              <li>invertibles.</li>
+              <li>Diagonales,</li> 
+              <li>Triangulares,</li> 
+              <li>Simétricas,</li> 
+              <li>Antisimétricas</li>
+              <li>Invertibles.</li>
             </ul>
             </li>
-          <li>Conceptos básicos de sistemas de ecuaciones</li>
-          <li>Metodos de solución: Metodo de Gauss y Gauss-Jordan</li>
-          <li>Inversa de una matriz</li>
-          <li>Matrices elementales</li>
-          </ol>
+          <li>Conceptos básicos de sistemas de ecuaciones.</li>
+          <li>Metodos de solución: Metodo de Gauss y Gauss-Jordan.</li>
+          <li>Inversa de una matriz.</li>
+          
+        </ol>
+        <li><b><font size="5">Matrices elementales  y determinantes</font></b></li>
+        <ol>
+          <li>Matrices elementales.</li>
+          <li>Determinantes de $2 \times 2$ e interpretación geométrica.
+          <li>Determinantes de $n \times n$.</li>
+          <li>Propiedades de los determinantes.</li>
+          <li>La adjunta clásica e inversa de una matriz.</li>
+          <li> Regla de Cramer.</li>
+          
+        </ol>
 
-      <li>Transformaciones Lineales</li>
-        <ul>
-          <li>Definicion y propiedades</li>
-          <li>Nucleo, imagen, rango y nulidad de una transformación lineal.</li>
-          <li>Composicion de transformaciones lineales</li>
-          <li>Representacion matricial</li>
-          <li>Rango y nulidad de una matriz</li>
-          <li>Isomorfismos</li>
-          <li>Espacios duales</li>
-        </ul>
+
+      <li><b><font size="5">Transformaciones lineales</font></b></li>
+        <ol>
+          <li>Transformación lineal.</li>
+          <li>Nucleo, imagen de una transformación lineal.</li>
+          <li>Composicion de transformaciones lineales.</li>
+          <li>Representacion matricial de una transformación lineal.</li>
+          <li>Espacio de transformaciones lineales.</li>
+          <li>La transformación lineal asociada a una matriz.</li>
+          <li>Rango y nulidad de una matriz.</li>
+          <li>Isomorfismos de espacios vectoriales.</li>
+          <li>Cambios de base.</li>
+          <li>Espacio dual</li>
+        </ol>
+      <li><b><font size="5">Producto escalar</font></b></li>
+        <ol>
+          <li>Producto escalar.</li>
+          <li>Bases ortogonales.</li>
+          <li>Operadores lineales y operadores adjuntos.</li>
+          <li>Operadores unitarios.</li>
+        </ol>
+      <!--
+      <li><b><font size="5">Determinantes</font></b></li>
+        <ol>
+          <li>Definición y propiedades.</li>
+          <li>Matrices inversas y determinantes</li>
+          <li>Determinante de un operador lineal.</li>
+        </ol>
+      -->
     </ol>
 
     </div>
