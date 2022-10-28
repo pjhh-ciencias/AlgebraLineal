@@ -497,9 +497,9 @@
         <ul>
           <li>Sea $W_{1}$ el conjunto de todas las matrices en $\mathbb{M}_{n\times n}(\mathbb{F})$ que son 
             triangulares superiores,  i.e. 
-            $$W_{1}:=\{ A\in \mathbb{M}_{n\times n}(\mathbb{F}) \colon A_{ij}=0 \text{ cuando } i>j \}$$
+            $$W_{1}:=\{ A\in \mathbb{M}_{n\times n}(\mathbb{F}) \colon A_{ij}=0 \text{ siempre que  } i>j \}$$
           </li>
-          <li>  $W_{2}:=\{ A\in \mathbb{M}_{n\times n}(\mathbb{F}) \colon A_{ij}=0 \text{ cuando } i\leq j \}$
+          <li>  $W_{2}:=\{ A\in \mathbb{M}_{n\times n}(\mathbb{F}) \colon A_{ij}=0 \text{ siempre que  } i\leq j \}$
           </li>
         </ul>
       </p>
@@ -512,11 +512,36 @@
       <p>
         Sea $V$ el espacio vectorial formado por todas las matrices triangulares superiores de tamaño $n\times n$ con entradas en 
         un campo $\mathbb{F}$. Sea $W_{1}$ el subespacio de $V$ formado todas las matrices diagonales y 
-        $W_{2}:=\{ A \in V \colon A_{ij}=0 \text{ cuando }i < j \} $.
+        $W_{2}:=\{ A \in V \colon A_{ij}=0 \text{ siempre que  }i < j \} $.
      </p> 
 
-     <p>Demostrar que </p>
+     <p>Demostrar que $V=W_{1} \oplus W_{2}$</p>
     </div>
+
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p> Sea  $\mathbb{M}_{n\times n}(\mathbb{R})$ el espacio vectorial sobre $\mathbb{R}$ 
+        de todas las matrices cuadradas de tamaño $n\times n$  con entradas en  $\mathbb{R}$. 
+        Una matriz $M \in \mathbb{M}_{n\times n}(\mathbb{R})$ es <b>antisimétrica</b> si $M^{t}=-M$
+      </p>
+
+      <p>Sea $M \in \mathbb{M}_{n\times n}(\mathbb{R})$, 
+        <ol>
+          <li>Prueba  que $M+M^{t}$ es una matriz simétrica.</li><br>
+          <li>Demuestra  que $M-M^{t}$ es una matriz antisimétrica.</li><br>
+          <li>Demuestra que toda matriz cuadrada en $\mathbb{M}_{n\times n}(\mathbb{R})$ se puede escribir como la suma 
+            de una matriz simétrica y una matriz antisimétrica.</li><br>
+          <li>Prueba que el conjunto   $W_{1}$ de   $\mathbb{M}_{n\times n}(\mathbb{R})$ de todas las matrices
+             en $\mathbb{M}_{n\times n}(\mathbb{R})$ antisimétricas forman un subespacio vectorial sobre 
+            $\mathbb{R}$. </li><br>
+          <li>Concluye que si $W_{2}$ denota el subespacio de $\mathbb{M}_{n\times n}(\mathbb{R})$ de todas las matrices en 
+            $\mathbb{M}_{n\times n}(\mathbb{R})$ que son simétricas, entonces  $$\mathbb{M}_{n\times n}(\mathbb{R})= W_{1}\oplus w_{2}$$</li>
+          </ol>
+    </p>
+    </div>
+
+
+
 
 
 
