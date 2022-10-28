@@ -1,2 +1,3 @@
-# TIyCUNO
-Pagina del curso Tecnologías de la Información y Comunicación UNO impartido en la Universidad del Mar, a la carrera de Administración Turística.    
+# Álgebra Lineal
+
+Página del curso <b>Álgebra Lineal</b> impartido a estudiantes de la <b>Licenciatura en Actuaría</b> en la <b>Universidad del Mar, Campus Huatulco, Oaxaca, México.</b>    
