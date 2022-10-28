@@ -232,7 +232,7 @@
     </div>
 
     
-    <div class="ejercicio-box">
+    <div class="ejercicio-box" id="Ejer:Esp_vect_matrix_mn">
       <h2 class="number-title"> Ejercicio</h2>
     <p>Sea $\mathbb{F}$ un campo  y $m,n\in \mathbb{N}$.  Consideremos  el  conjunto $\mathbb{M}_{m \times n}(\mathbb{F})$ 
       de todas las matrices de tamaño $m \times n$ con entradas en el campo $\mathbb{F}$, esto es, 
@@ -341,8 +341,96 @@
       
     </div>
 -->
+
+<div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+  <p>Sea $\mathbb{F}$ un campo. Demostrar que 
+    $$H_{1}:= \{(a_{1}, \ldots, a_{n})\in \mathbb{F}^n \colon a_{1}+\cdots + a_{n}=0  \} \subseteq \mathbb{F}^{n} $$</p>
+  es un subespacio vectorial de $\mathbb{F}^{n}$ pero que 
+    $$H_{2}:= \{(a_{1}, \ldots, a_{n})\in \mathbb{F}^n \colon a_{1}+\cdots + a_{n}=1  \} \subseteq \mathbb{F}^{n}$$
+  no lo es.</p>
+  
+  </div>
   
 
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Sea $\mathbb{F}$ un campo y  $\mathbb{P}(\mathbb{F})$ el conjunto  de todos los polinomios en la variable $x$
+      con ceficientes en $\mathbb{F}$. Para $n \in \mathbb{N}$ arbitrario pero fijo
+      definamos  el siguiente subconjunto de $\mathbb{P}(\mathbb{F})$:
+     
+      $$W:=\{ p(x) \in \mathbb{P}(\mathbb{F}) \colon p(x)=0 \text{ o } p(x) \text{ tiene grado } n\}$$
+
+    ¿Es $W$ un subespacio vectorial de $\mathbb{P}(\mathbb{F})$? Justifica tu repuesta.
+    </p>
+
+  </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Sea $\mathbb{F}$ un campo. Dado $A \in \mathbb{M}_{m\times n}(\mathbb{F})$ (Ver <a href="T1Ejercicios.html#Ejer:Esp_vect_matrix_mn"> Ejercicio 1.11</a>) 
+    se dice que $A$ es una <b>matriz triángular superior</b> si todos los términos ubicados por debajo de la diagonal son cero, i.e.
+    si $A_{ij}=0$ siempre que $i >j$.
+  </p> 
+
+  <p>Demuestra que el conjunto de las matrices triangulares superiores forman un subespacio vectorial 
+     de  $\mathbb{M}_{m\times n}(\mathbb{F})$.   </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+        Sea $\mathbb{F}$ un campo y $\mathbb{P}(\mathbb{F})$ el espacio vectorial sobre $\mathbb{F}$ de todos los polinomios con coeficientes 
+        en $\mathbb{F}$. Consideremos los siguientes subconjuntos de $\mathbb{P}(\mathbb{F})$:
+        <ul>
+          <li>Sea $W_{1}$ el conjunto de polinomios $p(x)\in \mathbb{P}(\mathbb{F})$ tales que $p(x)=0$ o en la 
+            representación:
+          
+            $$p(x)=a_{n}x^{n} + a_{n-1} x^{n-1}  + \cdots + a_{1}x + a_{0}$$ 
+          
+            los coeficientes $a_{0}, a_{2},a_{4} \ldots, $ de todas las potencias pares de $x$ son iguales a cero. 
+          </li>
+          <li>Sea $W_{2}$ el conjunto de todos los polinomios $g(x) \in \mathbb{P}(\mathbb{F})$ 
+            tales que $q(x)=0$ o en la 
+            representación:
+          
+            $$q(x)=b_{m}x^{m} + b_{m-1} x^{m-1}  + \cdots + b_{1}x + b_{0}$$ 
+
+            los coeficientes $b_{1}, b_{3},b_{5} \ldots, $ de todas las potencias pares de $x$ son iguales a cero. 
+
+
+            <p>Demostrar que $\mathbb{P}(\mathbb{F})= W_{1} \oplus W_{2}$</p>
+          </li>
+        </ul>
+        
+      </p>
+    </div>
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+        Sea $\mathbb{F}$ un campo, $n \in \mathbb{N}$ y $\mathbb{M}_{n\times n}(\mathbb{F})$ el espacio vectorial sobre $\mathbb{F}$ 
+        de todas las matrices cuadradas de tamaño $n\times n$  con entradas en el campo $\mathbb{F}$. Consideremos los siguientes 
+        subconjuntos de $\mathbb{M}_{n\times n}(\mathbb{F})$:
+        <ul>
+          <li>Sea $W_{1}$ el conjunto de todas las matrices en $\mathbb{M}_{n\times n}(\mathbb{F})$ que son 
+            triangulares superiores,  i.e. 
+            $$W_{1}:=\{ A\in \mathbb{M}_{n\times n}(\mathbb{F}) \colon A_{ij}=0 \text{ cuando } i>j \}$$
+          </li>
+          <li>  $W_{2}:=\{ A\in \mathbb{M}_{n\times n}(\mathbb{F}) \colon A_{ij}=0 \text{ cuando } i\leq j \}$
+          </li>
+        </ul>
+      </p>
+
+      <p>Demostrar que $\mathbb{M}_{n\times n}(\mathbb{F})= W_{1} \oplus W_{2}$</p>
+    </div>
+
+  
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+        Sea $V$ el espacio vectorial formado por todas las matrices triangulares superiores de tamaño $n\times n$ con entradas en 
+        un campo $\mathbb{F}$. Sea $W_{1}$ el subespacio de $V$ formado todas las matrices diagonales y 
+        $W_{2}:=\{ A \in V \colon A_{ij}=0 \text{ cuando }i < j \} $.
+     </p> 
+
+     <p>Demostrar que </p>
+    </div>
 
 
 
