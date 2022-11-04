@@ -151,13 +151,18 @@
       <h2 class="number-title"> Ejercicio</h2>
     <p>Demuestra que el conjunto de los números complejos $\mathbb{C}:= \{x+iy \, |\,x,y \in \mathbb{R}\}$ con la suma
       y multiplicación de números complejos definidas para $z:= a+ib$,$w:= c+ id$ en $\mathbb{C}$ como:
-     $$z+w= (a+ib) + (c+id):= (a+c) + i (b+d) $$ y
-     $$z \cdot w = (a+ib) \cdot (c+id) := (ac-bd)+ i(ad+bc) $$
-     es un campo. 
+  
+      $$z+w= (a+ib) + (c+id):= (a+c) + i (b+d) $$ y
+     
+      $$z \cdot w = (a+ib) \cdot (c+id) := (ac-bd)+ i(ad+bc) $$
+     
+      es un campo. 
     </p> 
     <p><b>Hint:</b> Si $a,b \in \mathbb{R}-\{0\}$, para $z=a+ib$ recuerde que: 
-    $$z^{-1}= \displaystyle{\left(\frac{a}{a^2+b^2}\right) - i \left(\frac{b}{a^2+b^2}\right)}$$
-    Además, recuerde  la notación: $a-ib := a + i (-b)$</p>
+ 
+      $$z^{-1}= \displaystyle{\left(\frac{a}{a^2+b^2}\right) - i \left(\frac{b}{a^2+b^2}\right)}$$
+   
+      Además, recuerde  la notación: $a-ib := a + i (-b)$</p>
     </div>
 
     
@@ -168,13 +173,18 @@
       <h2 class="number-title"> Ejercicio</h2>
      <p>Sean $\mathbb{F}$ un campo y $n \in \mathbb{N}$. Consideremos el conjunto $\mathbb{P}_{n}(\mathbb{F})$,
      de todos los polinomios con coeficientes en $\mathbb{F}$ de grado menor o igual que $n$, i.e. 
+    
      $$\mathbb{P}_{n}(\mathbb{F}):=\{a_{n} x^{n} + a_{n-1} x^{n-1} + \cdots + a_{1} x + a_0 \, | \, a_{i} \in \mathbb{F}, \text{ para } i=0,1,\ldots, n \} $$ 
+    
      Para  $p:=\sum_{k=0}^{n} a_{k} x^{k}, q:= \sum_{k=0}^{n} b_{k} x^{k} \in \mathbb{P}_{n}(\mathbb{F})$, 
      definimos la suma de $p$ y $q$ como:
+   
      $$p+q= \sum_{k=0}^{n} a_{k}x^{k}  +  \sum_{k=0}^{n} b_{k} x^{k}:= \sum_{k=0}^{n} (a_{k} + b_{k}) x^{k} $$
      y la multiplicación por escalar de $\alpha$ de la siguiente manera:
+    
      $$\alpha p = \alpha \left( \sum_{k=0}^{n} a_{k} x^{k} \right):= \sum_{k=0}^{n} (\alpha \cdot a_{k}) x^{k} $$ 
-    Prueba que junto con estas operaciones $\mathbb{P}_{n}(\mathbb{F})$ es un espacio vectorial sobre $\mathbb{F}$
+    
+     Prueba que junto con estas operaciones $\mathbb{P}_{n}(\mathbb{F})$ es un espacio vectorial sobre $\mathbb{F}$
   </p>
     </div>
 
@@ -184,9 +194,12 @@
     $$\mathcal{F}(X,\mathbb{F}):= \{ f \colon X  \to \mathbb{F} \,|\, f \text{ es una función} \}$$
     Para $f,g \in \mathcal{F}(X,\mathbb{F})$, se define la suma de $f$ y $g$ como la función $f+g$ con
     regla de correspondecia dada por:
+   
     $$(f+g)(x):= f(x) + g(x), \forall x \in X$$   
+   
     y dado $\alpha \in \mathbb{F}$, se define la multiplicación por escalar como la función $\alpha f$ 
     con regla de correspondencia:
+   
     $$(\alpha f)(x):= \alpha \cdot f(x), , \forall x \in X$$
     
     Demuestra que junto con estas operaciones, $\mathcal{F}(X,\mathbb{F})$ es un espacio vectorial sobre $\mathbb{F}$
@@ -220,9 +233,12 @@
     <p>Sea $\mathbb{F}$ un campo  y $n\in \mathbb{N}$.  Consideremos el  conjunto
        $\mathbb{M}_{n \times n}(\mathbb{F})$ de
       todas las matrices de tamaño $n \times n$ con entradas en el campo $\mathbb{F}$, i.e. 
-     $$\mathbb{M}_{n \times n}(\mathbb{F}) := \left\{ \left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}} \, | \, a_{ij} \in \mathbb{F}  \text{ para cada } i,j=1,2,\ldots,n \right\} $$
-    Dados $A:=\left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}}, B:=\left(b_{ij} \right)_{i,j \in \{1,\ldots,n \}} \in \mathbb{M}_{n \times n}(\mathbb{F}) $
+    
+    $$\mathbb{M}_{n \times n}(\mathbb{F}) := \left\{ \left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}} \, | \, a_{ij} \in \mathbb{F}  \text{ para cada } i,j=1,2,\ldots,n \right\} $$
+    
+      Dados $A:=\left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}}, B:=\left(b_{ij} \right)_{i,j \in \{1,\ldots,n \}} \in \mathbb{M}_{n \times n}(\mathbb{F}) $
     y $\alpha \in \mathbb{F}$, definimos la suma de matrices  y la  multiplicación por escalar respectivamente como:
+    
     $$A+B=\left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}} + \left(b_{ij} \right)_{i,j \in \{1,\ldots,n \} } := \left(a_{ij} + b_{ij}\right)_{i,j \in \{1,\ldots,n \}} $$
    
     $$\alpha A =\alpha \left(a_{ij} \right)_{i,j \in \{1,\ldots,n \}}:= \left(\alpha \cdot a_{ij} \right)_{i,j \in \{1,\ldots,n \}}  $$
@@ -236,9 +252,12 @@
       <h2 class="number-title"> Ejercicio</h2>
     <p>Sea $\mathbb{F}$ un campo  y $m,n\in \mathbb{N}$.  Consideremos  el  conjunto $\mathbb{M}_{m \times n}(\mathbb{F})$ 
       de todas las matrices de tamaño $m \times n$ con entradas en el campo $\mathbb{F}$, esto es, 
-     $$\mathbb{M}_{m \times n}(\mathbb{F}) := \left\{ \left(a_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}} \, | \, a_{ij} \in \mathbb{F}  \text{ para cada } i=1,\ldots,m, j=1,\ldots,n \right\} $$
-    Dados $A:=\left(a_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}}, B:=\left(b_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}} \in \mathbb{M}_{m \times n}(\mathbb{F}) $
+   
+      $$\mathbb{M}_{m \times n}(\mathbb{F}) := \left\{ \left(a_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}} \, | \, a_{ij} \in \mathbb{F}  \text{ para cada } i=1,\ldots,m, j=1,\ldots,n \right\} $$
+  
+      Dados $A:=\left(a_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}}, B:=\left(b_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}} \in \mathbb{M}_{m \times n}(\mathbb{F}) $
     y $\alpha \in \mathbb{F}$, definimos la suma de matrices  y la  multiplicación por escalar respectivamente como:
+   
     $$A+B=\left(a_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}} + \left(b_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}} := \left(a_{ij} + b_{ij}\right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}} $$
    
     $$\alpha A =\alpha \left(a_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}}:= \left(\alpha \cdot a_{ij} \right)_{i\in \{1,\ldots,m \}, j \in \{1,\ldots,n \}}  $$
@@ -326,13 +345,11 @@
 
     Demuestra que $Z$ es un espacio vectorial sobre $\mathbb{F}$ con las siguientes operaciones:
 
-
     $$(v_{1},w_{1}) + (v_{2},w_{2}):=( v_{1} \boxplus v_{2},w_{1} \oplus w_{2}) $$
 
     $$\alpha(v,w):=(\alpha \boxdot v  ,\alpha \odot w) $$
 
     Donde $(v_{1},w_{1}), (v_{2},w_{2}), (v,w) \in Z$
-
   </p>
 
   <p><b>Observación</b> Este ejercicio no tiene relacion con la definicion de suma directa.</p>
