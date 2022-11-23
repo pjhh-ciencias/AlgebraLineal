@@ -341,6 +341,255 @@
       <p><b>Hint.</b> Vea Ejercicio <a href="T2Ejercicios.html#Ejer:Span_union_subespaces"> Ejercicio 2.8</a></p>
     </div>
   
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Sean $f, g \in \mathcal{F}([a,b])$  funciones  diferenciables en $[a,b]$, el determinante $W(x)$ o simplemente
+        $W(f,g)(x)$ definido como:
+           $$W(f,g)(x):= \left| \begin{matrix}  f(x) & g(x) \\
+        f^{'}(x) & g^{'}(x)
+        \end{matrix} \right|\,\,\,,\,  \text{ para cada }x \in [a,b]$$
+        se le llama el  <b>Wronskiano</b> de $f$ y $g$ en honor del matemático polaco-francés 
+        <em>Josef Maria Hoëné - Wronski</em>. Este determinante esta fuertemente relacionado con la pregunta de si $f$
+        y $g$ son linealmente independientes en $ \mathcal{F}([a,b])$ 
+      </p>
+     <p>
+      <ul>
+        <li>
+        Demuestra que si el Wronskiano de $f$ y $g$ no es identicamente cero i.e. si existe $x_{0} \in [a,b]$ tal que 
+        $W(x_{0}) \not= 0$, entonces  $f$ y $g$ son funciones linealmente independientes en $\mathcal{F}([a,b])$.
+      </li><br>
+      <li>
+        Muestra con un contraejemplo que el reciproco en general no se satisface.
+      </li>
+      </ul>
+    </p>
+
+      <p><b>Hint.</b> Usa sin demostración el siguiente resultado: </p>
+
+      <p>El siguiente  <b>sistema de ecuaciones lineales homogeneo</b> (homogeneo porque todas las ecuaciones estan igualadas a cero) de $n$ ecuaciones con 
+        $n$ incognitas:
+
+
+        $$
+        \begin{matrix} 
+      a_{11}x_{1} & + &  a_{12}x_{2} & + & \cdots & + &  a_{1n}x_{n} & =& 0 \\
+      a_{21}x_{1} & + & a_{22}x_{2}  & + & \cdots & + &  a_{2n}x_{n} & =& 0 \\
+                  &\vdots&           &\vdots &  \ddots &  \vdots & &  \vdots&   \\
+      a_{n1}x_{1} & + & a_{n2}x_{2}  & + & \cdots & +  &  a_{nn}x_{n} &  = & 0
+     \end{matrix}
+        $$
+<!---
+      \begin{align*} 
+      a_{11} x_{1} + a_{12} x_{2} + \cdots + a_{1n} x_{n} &= 0 \\
+      a_{21} x_{1} + a_{22} x_{2} + \cdots + a_{2n} x_{n} &= 0 \\
+      \vdots & \\
+      a_{n1} x_{1} + a_{n2} x_{2} + \cdots + a_{nn} x_{n} &= 0 \\
+      \end{align*}
+      -->
+      
+      tiene como  única solución (la solución trivial)  si y sólo si  $\mathrm{det}(A)\not= 0$, 
+      donde $A$ es la matriz de coeficientes del sistema, i.e. 
+
+      $$A:= \begin{pmatrix} 
+      a_{11} & a_{12} & \cdots & a_{1n} \\
+      a_{21} & a_{22} & \cdots & a_{2n} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      a_{n1} & a_{n2} & \cdots & a_{nn}
+     \end{pmatrix}$$
+    </p>
+
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Sean $f_{1}, f_{2}, \ldots, f_{n} \in \mathcal{F}([a,b])$  las cuales son  
+        ${n-1}$ veces difernciables en  $[a,b]$. Se define y 
+        y denota el <b>Wronskiano</b> de $f_{1}, f_{2}, \ldots, f_{n}$ como el determinante
+
+         $$W(f_{1}, f_{2}, \ldots, f_{n})(x):= \left| \begin{matrix}  f_{1}(x) & f_{2}(x) & \cdots &f_{n}(x) \\
+         f_{1}^{'}(x) & f_{2}^{'}(x) & \cdots  & f_{n}^{'}(x)\\
+         \vdots & \vdots & \ddots & \vdots \\
+         f_{1}^{(n-1)}(x) & f_{2}^{(n-1)}(x) & \cdots  & f_{n}^{(n-1)}(x)\\
+         \end{matrix} \right|$$
+
+         Demuestra que si $W(f_{1}, f_{2}, \ldots, f_{n})(x)$ is diferente de cero en al menos un punto $x \in [a,b]$
+         entonces las funciones  $f_{1}, f_{2}, \ldots, f_{n}$ son linealmente independientes en $\mathcal{F}([a,b])$.
+         </p>
+
+         <p><b>Hint.</b> Usa sin demostración el siguiente resultado: </p>
+
+      <p>El siguiente  <b>sistema de ecuaciones lineales homogeneo</b> (homogeneo porque todas las ecuaciones estan igualadas a cero) de $n$ ecuaciones con 
+        $n$ incognitas:
+
+
+        $$
+        \begin{matrix} 
+      a_{11}x_{1} & + &  a_{12}x_{2} & + & \cdots & + &  a_{1n}x_{n} & =& 0 \\
+      a_{21}x_{1} & + & a_{22}x_{2}  & + & \cdots & + &  a_{2n}x_{n} & =& 0 \\
+                  &\vdots&           &\vdots &  \ddots &  \vdots & &  \vdots&   \\
+      a_{n1}x_{1} & + & a_{n2}x_{2}  & + & \cdots & +  &  a_{nn}x_{n} &  = & 0
+     \end{matrix}
+        $$
+<!---
+      \begin{align*} 
+      a_{11} x_{1} + a_{12} x_{2} + \cdots + a_{1n} x_{n} &= 0 \\
+      a_{21} x_{1} + a_{22} x_{2} + \cdots + a_{2n} x_{n} &= 0 \\
+      \vdots & \\
+      a_{n1} x_{1} + a_{n2} x_{2} + \cdots + a_{nn} x_{n} &= 0 \\
+      \end{align*}
+      -->
+      
+      tiene como  única solución (la solución trivial)  si y sólo si  $\mathrm{det}(A)\not= 0$, 
+      donde $A$ es la matriz de coeficientes del sistema, i.e. 
+
+      $$A:= \begin{pmatrix} 
+      a_{11} & a_{12} & \cdots & a_{1n} \\
+      a_{21} & a_{22} & \cdots & a_{2n} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      a_{n1} & a_{n2} & \cdots & a_{nn}
+     \end{pmatrix}$$
+    </p>
+    </div>
+
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Sean $f_{1}, f_{2}, \ldots, f_{n} \in \mathcal{F}([a,b])$  las cuales son  
+        ${n-1}$ veces difernciables en  $[a,b]$. Demuestre que si las funciones
+        $f_{1}, f_{2}, \ldots, f_{n}$ son linealmente dependientes, entonces
+         $W(f_{1}, f_{2}, \ldots, f_{n})(x)=0 $ para todo $x \in [a,b]$ 
+      </p>
+
+    </div>
+
+    
+    
+    
+
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p> En cada uno de los siguientes ejercicios, determine si el conjunto dado es 
+         linealmente independiente en el espacio vectorial respectivo. En caso de ser 
+         linealmente dependientes expresa un vector como una combinacion de los otros 
+         vectores en el conjunto:
+        <ol>
+          <li>$\{\mathrm{Sen}(x), \mathrm{Cos}(x) \}$
+             en $\mathcal{F}(\mathbb{R})$ sobre $\mathbb{R}$: 
+          </li><br>
+
+          <li>$\{\mathrm{Sen}^{2}(x), \mathrm{Cos}^{2}(x), \mathrm{Cos}(2x) \}$
+             en $\mathcal{F}(\mathbb{R})$ sobre $\mathbb{R}$.
+          </li><br>
+
+          <li>$\{1,  \mathrm{Sen}^{2}(x), \mathrm{Cos}^{2}(x) \}$ 
+            en $\mathcal{F}(\mathbb{R})$ sobre $\mathbb{R}$.            
+          </li><br>
+          
+          <li>$\{e^{x}, e^{-x} \}$ 
+            en $\mathcal{F}(\mathbb{R})$ sobre $\mathbb{R}$.           
+          </li><br>
+
+          <li>$\{1, \mathrm{ln}(2x),  \mathrm{ln}(x^{2}) \}$ 
+            en $\mathcal{F}(\mathbb{R}^{+})$ sobre $\mathbb{R}$.            
+          </li><br>
+          
+          <li>$\left\{
+            \begin{pmatrix}
+             1 & 1 \\
+             0 & 1
+           \end{pmatrix},   \begin{pmatrix}
+           1 & -1 \\
+           1 & 0
+         \end{pmatrix}, 
+         \begin{pmatrix}
+           2 & 0 \\
+           1 & 1
+         \end{pmatrix}
+        \right\}$
+         en  $\mathbb{M}_{2\times 2}( \mathbb{R})$ sobre  $\mathbb{R}$. 
+            </li><br>
+            <li>$\{ x , 1 + x \}$
+              en  $\mathbb{P}_{1}( \mathbb{R})$ sobre  $\mathbb{R}$.
+           </li><br>
+
+          <li>$\{ 1 + x , 1 +  x^{2},1 - x + x^{2}\}$
+             en  $\mathbb{P}_{2}( \mathbb{R})$ sobre  $\mathbb{R}$.
+          </li><br>
+          
+          <li>$\{ 1+x + x^{2}, 1-x + 3x^{2}, 1 + 3x -x^{2} \}$ 
+            en $\mathbb{P}_{2}( \mathbb{R})$ sobre  $\mathbb{R}$.
+            </li><br>
+        </ol>
+       
+
+      </p>
+    </div>
+
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Considera el espacio vectorial $\mathbb{R}^{3}$ sobre $\mathbb{R}$. 
+        En los siguientes ejercicios determina si los vectores dados pertenecen a el subspacio $\mathrm{Span}(S)$,  i.e.
+        si pueden expresarse como combinación lineal de los vectores en $S$.
+        <ol>
+          <li>$S=\{(2,-1,3), (5,0,4) \}$</li><br>
+          <ul>
+            <li>$u=(0,-5,7)$</li><br>
+            <li>$w=(3,6,-2)$</li><br>
+          </ul>
+
+          <li>$S=\{(1,2,-2), (2,-1.1) \}$</li><br>
+          <ul>
+            <li>$u=(1,17,-17)$</li><br>
+            <li>$w=(8,-4,3)$</li>
+          </ul>
+        </ol>
+
+      </p>
+    </div>
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Considera el espacio vectorial $\mathbb{R}^{2}$ sobre $\mathbb{R}$. 
+        En los siguientes ejercicios determina si $\mathrm{Span}(S)= \mathbb{R}^{2}$, en caso contrario
+        proporcionar una descripción geométrica del subespacio generado por $S$.
+        <ol>
+          <li>$S=\{(2,1), (-1,2) \}$</li><br>
+          <li>$S=\{(-3,5)\}$</li><br>
+          <li>$S=\{(-1,2), (2,4)\}$</li><br>
+          <li>$S=\{(5,0), (5,-4)\}$</li><br>
+          <li>$S=\{(1,3),(-2,-6),(4,12)\}$</li><br>
+          <li>$S=\{(-1,4),(4,-1), (1,1)\}$</li><br>
+        </ol>
+
+      </p>
+    </div>
+
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>En el espacio vectorial $\mathbb{R}^{2}$ sobre $\mathbb{R}$, para cada uno de los siguientes ejercicios 
+        determina si $\mathrm{Span}(S)= \mathbb{R}^{2}$, en caso contrario
+        proporcionar una descripción geométrica del subespacio generado por $S$.
+        <ol>
+          <li>$S=\{(2,1), (-1,2) \}$</li><br>
+          <li>$S=\{(-3,5)\}$</li><br>
+          <li>$S=\{(-1,2), (2,4)\}$</li><br>
+          <li>$S=\{(5,0), (5,-4)\}$</li><br>
+          <li>$S=\{(1,3),(-2,-6),(4,12)\}$</li><br>
+          <li>$S=\{(-1,4),(4,-1), (1,1)\}$</li><br>
+        </ol>
+
+      </p>
+    </div>
+
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+
+      </p>
+    </div>
+
+
     <!--
 
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
