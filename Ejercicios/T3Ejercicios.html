@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 2 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 2 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Álgebra Lineal  </h1>
+       <nav class="top-nav">
+        <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/AlgebraLineal/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/AlgebraLineal/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/AlgebraLineal/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/AlgebraLineal/Ejercicios.html"> Ejercicios  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/AlgebraLineal/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Ejercicios propuestos tercer parcial   </title>
+    
+  </head>
+
+
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Ejercicios propuestos tercer parcial</h1>   
+    
+  
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+    </p>
+    </div>
+
+    
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+
+      </p>
+    </div>
+
+
+    <!--
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Sea  $n \in \mathbb{N}$. Consideremos el espacio vectorial $\mathbb{R}^{n}$ sobre $\mathbb{R}$.</p>
+      <p> Para cada $j\in \{1,2,\ldots,n \}$, se define el <b>$j$-ésimo vector canónico en 
+        $\mathbb{R}^{n}$</b> como el vector en $\mathbb{R}^{n}$ cuya $j$-ésima entrada es igual a $1$ y el resto de las entradas son cero, i.e.
+      $$e_{j}:=(0,\ldots,\underbrace{1}_{j- \text{ésima coordenada}},\ldots,0)$$
+      
+      Esto es, 
+    \begin{align*} 
+          e_{1}:=& (1,0, \ldots, 0)\\
+          e_{2}:=& (0,1, \ldots, 0)\\
+           \hspace{2cm}\vdots & \\
+          e_{n-1}:=& (0,0, \ldots,1, 0)\\
+          e_{n}:=& (0,0, \ldots,0, 1)
+      \end{align*}
+      </p>
+
+      Demuestra que el conjunto $\{e_{1}, e_{2}, \ldots, e_{n}\}$ es linealmente indepediente.
+    </div>
+
+    
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Sea $\mathbb{F}$ un campo. Determina si el conjunto $\{1+x,x+ x^{2}, 1+ x^{2} \}$ es linealmente independiente
+         en $\mathbb{P}_{2}(\mathbb{F})$.</p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p><p>Sea $\mathbb{F}$ un campo. Demuestra que el conjunto de matrices en $\mathbb{M}_{2\times 2} (\mathbb{F})$
+        $$\left\{ \begin{pmatrix}
+        1&0 \\
+        0&0 
+        \end{pmatrix}, 
+        \begin{pmatrix}
+        0&1 \\
+        0&0 
+        \end{pmatrix},
+        \begin{pmatrix}
+        0&0 \\
+        1&0 
+        \end{pmatrix}
+        \begin{pmatrix}
+        0&0 \\
+        0&1 
+        \end{pmatrix}
+         \right\}$$
+        es linealmente independiente $\mathbb{M}_{2\times 2} (\mathbb{F})$.
+        </p>
+    </div>
+
+
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p><p>Sea $\mathbb{F}$ un campo. Demuestra que el conjunto de matrices en $\mathbb{M}_{2\times 2} (\mathbb{F})$
+        $$\left\{ \begin{pmatrix}
+        1&1 \\
+        1&0 
+        \end{pmatrix}, 
+        \begin{pmatrix}
+        1&-1 \\
+        1&0 
+        \end{pmatrix},
+        \begin{pmatrix}
+        2&0 \\
+        1&1 
+        \end{pmatrix}
+       
+         \right\}$$
+        es linealmente dependiente $\mathbb{M}_{2\times 2} (\mathbb{F})$.
+        </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Dar un ejemplo de tres vectores linealmente dependientes en $\mathbb{R}^{3}$ tales para cualesquiera dos, 
+         ninguno sea multiplo del otro. </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Consideremos el espacio vectorial $\mathcal{F}(\mathbb{R},\mathbb{R})$. Demuestra que el conjunto 
+        $\{\mathrm{Sen}^{2}(x), \mathrm{Cos}^{2}(x), \mathrm{Cos}(2x)\}$ es  linealmente dependiente.</p>
+
+        <p><b>Hint:</b> Use identidades trigonometricas </p>
+    </div>
+
+
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>En el espacio vectorial $\mathcal{F}(\mathbb{R},\mathbb{R})$. Determina si  el conjunto 
+        $\{\mathrm{Sen}(x), \mathrm{Cos}(x)\}$ es  linealmente independiente.</p>
+
+        <p><b>Hint:</b> Use identidades trigonometricas </p>
+    </div>
+
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p></p>
+    </div>
+
+
+-->
+
+</body>
