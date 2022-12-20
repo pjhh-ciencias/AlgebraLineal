@@ -515,3 +515,8 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+
+ol {
+  column-count: 1;
+}
