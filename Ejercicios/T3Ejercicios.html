@@ -456,7 +456,7 @@
 
 
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p>Sean $V$ un espacio vectorial sobre $\mathbb{F}$ y  $\mathcal{B}=\{v_{1}, v_{2}, \ldots, v_{n}  \}$ una base para $V$.
+      <p>Sean $V$ un espacio vectorial sobre $\mathbb{F}$ y  $\mathcal{B}=\{v_{1}, \ldots, v_{n}  \}$ una base para $V$.
         Si  $T\colon V \to V$ es una transformación lineal tal que $T(v_{i})=v_{i}$ para cada $i=1,2,\ldots, n$, demuestra que 
         $T$ es la transformación lineal identidad enn $V$, i.e. $T(v)=v$ para todo $v\in V$.
       </p>
@@ -464,16 +464,15 @@
 
 
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p>Sean $V$ y $W$   espacios vectoriales sobre $\mathbb{F}$ y  $v_{1}, v_{2}, \ldots, v_{n} \in V$, sea $T\colon V \in W$
+      <p>Sean $V$ y $W$   espacios vectoriales sobre $\mathbb{F}$ y  $v_{1}, \ldots, v_{n} \in V$, y sea $T\colon V \to W$ una transformación lineal.
         <ol>
-          <li>Si $\{T(v_{1}, T(v_{2}),\ldots, T(v_{n})))\}$ es un conjunto linealmente independiente en $W$, demuestra que
-            $\{v_{1}, v_{2}, \ldots, v_{n}  \}$ es linealmente independiente en $V$.</li><br>
+          <li>Si $\{T(v_{1}), \ldots, T(v_{n})\}$ es un conjunto linealmente independiente en $W$, demuestra que
+            $\{v_{1}, \ldots, v_{n}  \}$ es un conjunto linealmente independiente en $V$.</li><br>
           <li>Demuestre que el reciproco del inciso anterior es falso. Esto es, en general no  es cierto que si
-            $\{v_{1}, v_{2}, \ldots, v_{n}  \}$ es linealmente independiente en $V$, entonces $\{T(v_{1}), \ldots, T(v_{n}) \}$
+            $\{v_{1}, \ldots, v_{n}  \}$ es linealmente independiente en $V$, entonces $\{T(v_{1}), \ldots, T(v_{n}) \}$
             es linealmente independiente en $W$. Ilustre esto con un ejemplo.
           </li>
         </ol>
-
       </p>
     </div>
     
@@ -489,7 +488,7 @@
     </div>
     
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p>Sea $V$ un espacio vectorial sobre $\mathbb{F}$ de dimension $n$ y sea   $\mathcal{B}=\{v_{1}, v_{2}, \ldots, v_{n}  \}$ una base para $V$.
+      <p>Sea $V$ un espacio vectorial sobre $\mathbb{F}$ de dimension $n$ y sea   $\mathcal{B}=\{v_{1},  \ldots, v_{n}  \}$ una base para $V$.
         Sea $T\colon V \to \mathbb{R}^{n}$ definida como:
         $$T(v):= [v]_{B}$$
         Demuestra que $T$ esuna transformación lineal.
@@ -510,8 +509,70 @@
 
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
       <p>Sean $V$ y $W$ un espacio vectorial sobre $\mathbb{F}$ de dimension $n$ y sea 
-        $\mathcal{B}=\{v_{1}, v_{2}, \ldots, v_{n}  \}$ una base para $V$. Si $T_{1}, T_{2} \colon V \to W$ son 
+        $\mathcal{B}=\{v_{1}, \ldots, v_{n}  \}$ una base para $V$. Si $T_{1}, T_{2} \colon V \to W$ son 
         transformaciones  lineales tales que $T_{1}(v_{i})=T_{2}(v_{i})$ para cada $i=1,2,\ldots,n$, entonces 
         $T_{1}(v)=T_{2}(v)$ para cualquier $v\in V$.
+      </p>
+    </div>
+
+    <div class="ejercicio-box" id="Teo:Esp_Vect_TL" ><h2 class="number-title"> Ejercicio</h2>
+          <p>Sean $V$ y $W$ un espacio vectorial sobre $\mathbb{F}$. Se  denota al conjunto
+            de todas las transformaciones lineales de $V$ en $W$ por $\mathscr{L}(V,W)$, i.e.
+            $$\mathscr{L}(V,W):= \left\{T\colon V \to W \,  \big| \,  T \text{ es una transformación lineal } \right\}$$
+            <ul>
+              <li>Si $T_{1}, T_{2} \in \mathscr{L}(V,W) $ puede definirse la suma  $T_{1} + T_{2}$ de $T_{1}$ y $T_{2}$ como:
+                $$(T_{1} + T_{2})(v):= T_{1}(v) + T_{2}(v), \, \, \, \forall v \in V $$
+              </li><br>
+              <li>Si $\alpha \in \mathbb{F}$ es un escalar y $T \in \mathscr{L}(V,W) $ una transformación lineal, 
+                se define la multiplicación por escalar $\alpha T$  de $\alpha$ por $T$ como:
+                $$(\alpha T) (v) := \alpha T(v), \, \, \, \forall v \in V  $$
+
+              </li>
+            </ul>
+            Prueba que  $T_{1} + T_{2}$ y $\alpha T$ son ambas  transformaciones lineales de $V$ en $W$
+          </p>
+            </ul>
+      </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p>Demuestra que una traslación en el plano no es una transformación lineal. Esto es, 
+          para $v_{0} \in \mathbb{R}^{2}$  con $v_{0} \not= (0,0)$ fijo 
+          si $T\colon \mathbb{R}^{2} \to \mathbb{R}^{2}$ esta definido por 
+          $$T(v):= v + v_{0}, \, \, \, \forall v \in V $$
+          entonces $T$ no es una transformacion lineal.
+        
+        </p>
+      </div>
+          
+
+        <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+          <p>Demuestre que $\mathscr{L}(V,W)$ es un espacio vectorial con
+            la suma y multiplicación por un escalar definidas como en 
+            el ejercicio <a href="T3Ejercicios.html#Teo:Esp_Vect_TL"> Ejercicio 3.26</a>.
+          </p>
+        </div>
+
+        <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+          <p><b>Definición:</b> $x \in \mathrm{Dom}(f)$ es un punto fijo de una función $f$ si $f(x)=x$.</p>
+
+          <p>Sean $V$ un espacio vectorial sobre $\mathbb{F}$ y $T \colon V \to V$ una transformacion lineal.
+            Demuestra que el  conjunto de puntos fijos de $T$, es un subespacio de $V$.
+          </p>
+        </div>
+
+        
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Sean $V$ y $W$ espacios vectoriales sobre $\mathbb{F}$ y  $T\colon V \to W$ una transformación lineal. Demuestra 
+        que si $\{v_{1},  \ldots, v_{n}  \}$ es  un conjunto linealmente dependiente en $V$, entonces 
+        $\{T(v_{1}), \ldots, T(v_{n}) \}$ es unn conjunto linealmente dependiente en $W$.
+          </li>
+        </ol>
+
+      </p>
+    </div>
+
+
+
+
 
 </body>
