@@ -571,12 +571,103 @@
     </div>
 
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Sea $T\colon\mathbb{R} \to \mathbb{R}$ una transformación lineal.
+        Demuestra que si $T(1)=\lambda$, entonces 
+        $$T(x)= \lambda x, \,\,\,\,\, \forall  x\in \mathbb{R}$$
+        
+      </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
       <p>Sean $V$ un  espacio vectorial sobre $\mathbb{F}$ de dimensión finita y  $T\colon V \to V$ una transformación lineal.
         Demuestra que si $\mathrm{dim}(V)=1$, entonces existe $\lambda \in \mathbb{F}$ tal que 
         $$T(v)= \lambda v, \,\,\,\,\, \forall  v \in V$$
         
       </p>
     </div>
+
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>En los siguientes ejercicios determine si $T$ es una transformación lineal, en de 
+        no ser una T.L. presenta  un contraejemplo de la propiedad que no se satisface:
+        <ol>
+          <li>$T \colon \mathbb{R}^{2} \to \mathbb{R}$ definida por:
+            $$T(x,y):=x+y $$ 
+          </li><br>
+          <li>$T \colon \mathbb{R}^{3} \to \mathbb{R}^{2}$ definida por:
+            $$T(x,y,z):=(x,y) $$ 
+          </li><br>
+          <li>$T \colon \mathbb{R}^{2} \to \mathbb{R}^{3}$ definida por:
+            $$T(x,y):=(x,y,x^{2} + y^{2}) $$ 
+          </li><br>
+          <li>$T \colon \mathbb{M}_{n\times n}(\mathbb{F}) \to \mathbb{M}_{n\times n}(\mathbb{F})$ definida por:
+            $$T(A)):= A - A^{t} $$ 
+          </li><br>
+          <li>Para $\alpha \in \mathbb{F}$. Sea $T \colon \mathbb{M}_{n\times n}(\mathbb{F}) \to \mathbb{M}_{n\times n}(\mathbb{F})$ definida por:
+            $$T(A)):= \alpha A^{2} $$ 
+          </li><br>
+          <li>Para $\alpha \in \mathbb{F}$. Sea $T \colon \mathbb{M}_{n\times n}(\mathbb{F}) \to \mathbb{M}_{n\times n}(\mathbb{F})$ definida por:
+            $$T(A)):= \alpha A - A\alpha^{2}  $$ 
+          </li><br>
+          <li>$T \colon \mathbb{R}^{2} \to \mathbb{R}$ definida por:
+            $$T(x,y):=\sqrt{x^{2}+y^{2}} $$ 
+          </li><br>
+          <li>$T \colon \mathbb{P}_{2}(\mathbb{F})  \to \mathbb{P}_{3}(\mathbb{F}) $ definida por:
+            $$T(p(x)):= x^{2} + p(x) $$
+          </li><br>
+          <li>$T \colon \mathbb{P}_{2}(\mathbb{F})  \to \mathbb{P}_{3}(\mathbb{F}) $ definida por:
+            $$T(p(x)):= xp(x) $$
+          </li><br>
+          <li>$T \colon \mathbb{P}_{2}(\mathbb{F})  \to \mathbb{P}_{3}(\mathbb{F}) $ definida por:
+            $$T(p(x)):= p(x) + xp(x) + x^{2}p^{'}(x) $$
+        </li><br>
+        </ol>
+      </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Consideremos la funcion $T\colon C[0,1] \to  C[0,1] $ definida como $T(f):= F$ donde
+        $$F(x):= \int_{0}^{x} f(x) dx, \,\,\,\,\, \forall  x \in [0,1]$$ 
+        Demuestra que $T$ es una transformación lineal  y encuentra $T(e^{x})$ y  $T(x^{2})$
+      </p>
+    </div>
+
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>En los siguientes ejercicios determine si $T$ es una transformación lineal de $C[0,1]$ en $\mathbb{R}$, de 
+        no ser una T.L. presenta un contraejemplo de la propiedad que no se satisface:
+        <ol>
+          <li>$T(f):=f(0)$</li><br>
+          <li>$T(f):=\displaystyle{\frac{f(0)+ f(1)}{2}}$</li><br>
+          <li>$T(f):= |f(0)|$</li><br>
+          <li>$T(f):= \displaystyle{\left( \int_{0}^{x} (f(x))^{2} dx\right)^{\frac{1}{2}}}$</li><br>
+        </ol>
+      </p>
+    </div>
+
+        
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Sean $U,V,W$ espacios vectoriales sobre $\mathbb{F}$ y  $T_{1}\colon U \to V$, $T_{2}\colon V \to W$
+          transformaciones lineales. Sea $T\colon U \to W$ definida por 
+          $$T(u):= (T_{1} \circ T_{2})(u)= T_{1} \left( T_{2}(u)\right), \,\,\,\,\, \forall  u \in U $$ 
+          Demuestra que $T$ es una trnasformación lineal de $U$ en $W$. 
+      </p>
+    </div>
+
+        
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Sean $V$ un  espacio vectorial sobre $\mathbb{F}$ y $T\colon V \to V$ una
+          transformación lineal. Par cada $k \in \mathbb{N}$, se define recursivamente la función $T^{k}\colon V \to V$, como 
+          $$T^{1}(v):= T(v), \,\,\,\,\, \forall  v \in V$$   
+          $$T^{k+1}(v):= \left(T^{k} \circ T\right)(v)= T^{k}\left(T(v)\right), \,\,\,\,\, \forall  v \in V$$
+          Demuestra utilizando inducción matemática que $T^{n}\colon V \to V$ es una transformación lineal para cada $n\in \mathbb{N}$ 
+      </p>
+    </div>
+    
+ 
+
+
+
 
     <!-- 
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
